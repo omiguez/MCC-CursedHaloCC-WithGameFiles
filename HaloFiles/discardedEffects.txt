@@ -1,5 +1,0 @@
-(crash_game); do I have to explain this one
-(game_lost);  redundant with "kill_player"
-(cheat_active_camouflage) ; last eternally. Replaced by one of Inferno's.
-(cheat_all_weapons); Replaced by loadouts.
-(object_destroy_all); Nigh-guaranteed softlocking
