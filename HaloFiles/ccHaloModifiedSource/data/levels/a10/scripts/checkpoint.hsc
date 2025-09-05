@@ -16,15 +16,15 @@
 )
 
 (script startup checkpoint_checks
-  (sleep_until (volume_test_objects start_trigger_volume_name (players)) 10)
+  (sleep_until (volume_test_objects moving_2_trigger (players)) 10)
   (race_checkpoint 0x0000)
 
-  (sleep_until (volume_test_objects bridge_trigger_volume_name (players)) 10)
+  (sleep_until (volume_test_objects bridge_trigger_3 (players)) 10)
   (race_checkpoint 0x0001)
   
-  (sleep_until (volume_test_objects maintenance_trigger_volume_name (players)) 10)
+  (sleep_until (volume_test_objects tunnel_trigger_2 (players)) 10)
   (race_checkpoint 0x0002)
   
-  (sleep_until (volume_test_objects maintenance_trigger_volume_name (players)) 10)
+  (sleep_until (volume_test_objects end_trigger (players)) 10)
   (race_checkpoint 0x0003)
 )
