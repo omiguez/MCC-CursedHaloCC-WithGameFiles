@@ -16,7 +16,6 @@
 )
 
 (script startup checkpoint_checks
-  (sleep_until (volume_test_objects mission_start (players)) 10)
   (race_checkpoint 0x0300)
 
   (sleep_until (volume_test_objects valley_lid (players)) 10)

@@ -16,7 +16,6 @@
 )
 
 (script startup checkpoint_checks
-  (sleep_until (volume_test_objects lifeboat (players)) 10)
   (race_checkpoint 0x0100)
 
   (sleep_until (volume_test_objects first_welcome (players)) 10)

@@ -16,7 +16,6 @@
 )
 
 (script startup checkpoint_checks
-  (sleep_until (volume_test_objects area1_save_trigger (players)) 10)
   (race_checkpoint 0x0200)
 
   (sleep_until (volume_test_objects area5_dropship_trigger (players)) 10)

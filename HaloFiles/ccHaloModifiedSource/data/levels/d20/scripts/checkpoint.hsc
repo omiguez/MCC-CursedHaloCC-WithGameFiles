@@ -16,7 +16,6 @@
 )
 
 (script startup checkpoint_checks
-  (sleep_until (volume_test_objects enc1_1_door1_volume (players)) 10)
   (race_checkpoint 0x0800)
 
   (sleep_until (volume_test_objects 0_to_1_transition_trigger (players)) 10)

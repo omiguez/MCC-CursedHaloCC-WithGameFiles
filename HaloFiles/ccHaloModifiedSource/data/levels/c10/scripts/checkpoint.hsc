@@ -16,7 +16,6 @@
 )
 
 (script startup checkpoint_checks
-  (sleep_until (volume_test_objects enc_swamp1 (players)) 10)
   (race_checkpoint 0x0500)
 
   (sleep_until (volume_test_objects int_a_trigger_2 (players)) 10)

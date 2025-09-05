@@ -16,7 +16,6 @@
 )
 
 (script startup checkpoint_checks
-  (sleep_until (volume_test_objects a1_trigger (players)) 10)
   (race_checkpoint 0x0400)
 
   (sleep_until (volume_test_objects ext_a_trigger (players)) 10)
