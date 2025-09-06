@@ -1,7 +1,7 @@
 ;========== Global Progress Script(s) ==========
-(global long race_progress_anchor_value_start 0xDEADBEEF)   ;; anchor value start is something easy to find in memory
-(global long race_progress_value 0x00000000)                ;; starting value
-(global long race_progress_anchor_value_end 0xBEEFBABE)     ;; anchor value end is something easy to find in memory
+(global long race_progress_anchor_value_left -1091585346)   ;; anchor value start is something easy to find in memory
+(global long race_progress_value 256)                ;; starting value
+(global long race_progress_anchor_value_end -559038737)     ;; anchor value end is something easy to find in memory
 
 ;; external program finds that race_progress_value then sets it to 0
 ;; it then watches taht value for updates
@@ -16,17 +16,15 @@
 )
 
 (script startup checkpoint_checks
-  (race_checkpoint 0x0100)
-
   (sleep_until (volume_test_objects first_welcome (players)) 10)
-  (race_checkpoint 0x0101)
+  (race_checkpoint 257)
   
   (sleep_until (volume_test_objects rubble_all (players)) 10)
-  (race_checkpoint 0x0102)
+  (race_checkpoint 258)
   
   (sleep_until (volume_test_objects river_all (players)) 10)
-  (race_checkpoint 0x0103)
+  (race_checkpoint 259)
   
   (sleep_until (volume_test_objects cliff_all (players)) 10)
-  (race_checkpoint 0x0104)
+  (race_checkpoint 260)
 )
